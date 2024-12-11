@@ -539,14 +539,15 @@ margin: 0px;
    display: flex;
    flex-direction: column;
   }
+  #certificate{
+    height: 900px;
+}
   #certificate-image{
     width: 90%;
     border-radius: 10;
+    height: 40%;
   }
-  #certificate-image{
-    
-  }
-
+   
 }
 
 /* Desktop View */
@@ -604,6 +605,15 @@ margin: 0px;
         width: 30%;
         height: 30%;
     }
-   
+    #certificate{
+        height: 900px;
+    }
+    #certificate-image{
+     height: 55%;
+     width: 90%;
+    }
+   .about-containers{
+    height: 10%;
+   }
 
 }
