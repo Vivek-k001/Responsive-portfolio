@@ -476,7 +476,11 @@ margin: 0px;
     font-weight: bold;
 
 }
-  
+.heading-logo{
+    height: 40px;
+    width: 40px;
+    
+}
 
  
 /* Mobile View */
