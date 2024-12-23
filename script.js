@@ -41,3 +41,18 @@ var x = document.getElementById("x-logo");
 x.addEventListener('click', function() {
     window.open("https://x.com/FrlPlayer?t=b5VtK2ilrUPrP3nl3nvoXQ&s=09")
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('a[href*="#"]');
+  links.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      target.scrollIntoView();
+    });
+  });
+});
+
+
