@@ -56,3 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+const loadingScreen = document.getElementById('loading-screen');
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    loadingScreen.style.background = 'rgba(0, 0, 0, 0)'; /* fade out background */
+  }, 500); /* adjust the timing to your liking */
+  setTimeout(() => {
+    loadingScreen.style.display = 'none'; /* hide the loading screen */
+  }, 1500); /* adjust the timing to your liking */
+});
