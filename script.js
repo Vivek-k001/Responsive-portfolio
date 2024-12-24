@@ -59,5 +59,19 @@ document.addEventListener('DOMContentLoaded', function() {
 const loadingScreen = document.getElementById('loading-screen');
 
 window.addEventListener("load", function() {
-  document.getElementById("loading-screen").style.display = "none";
+setTimeout(function() {
+document.getElementById("loading-screen").style.display = "none";
+}, 1000); // Wait for 3 seconds before hiding the loading screen
 });
+
+
+// Create the background overlay element
+const backgroundOverlay = document.createElement('div');
+(div) = 'background-overlay';
+document.body.appendChild(backgroundOverlay);
+
+// Remove the background overlay after the animation is complete
+setTimeout(() => {
+    backgroundOverlay.remove();
+}, 3000); // 3000ms = 3s
+
