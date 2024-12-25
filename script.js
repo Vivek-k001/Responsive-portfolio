@@ -73,5 +73,5 @@ document.body.appendChild(backgroundOverlay);
 // Remove the background overlay after the animation is complete
 setTimeout(() => {
     backgroundOverlay.remove();
-}, 2000); // 3000ms = 3s
+}, 1000); // 3000ms = 3s
 
