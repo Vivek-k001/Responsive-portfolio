@@ -61,7 +61,7 @@ const loadingScreen = document.getElementById('loading-screen');
 window.addEventListener("load", function() {
 setTimeout(function() {
 document.getElementById("loading-screen").style.display = "none";
-}, 1000); // Wait for 3 seconds before hiding the loading screen
+}, 600); // Wait for 3 seconds before hiding the loading screen
 });
 
 
@@ -73,5 +73,5 @@ document.body.appendChild(backgroundOverlay);
 // Remove the background overlay after the animation is complete
 setTimeout(() => {
     backgroundOverlay.remove();
-}, 1000); // 3000ms = 3s
+}, 600); // 3000ms = 3s
 
