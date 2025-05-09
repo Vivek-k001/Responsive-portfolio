@@ -561,6 +561,142 @@ margin: 0px;
 }
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#education-text1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+#education-text2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+    margin-top: 40px;
+    background-color: rgb(227, 227, 227); /* Greyish white background */
+    padding-bottom: 1px;
+  }
+  
+  .line {
+    position: absolute;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 0; /* Start at 0 */
+  background: black;
+  transition: height 12s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .line.animate {
+    height: 100%; /* Grow when 'animate' class is added */
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 190px; /* More space between items */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 2.5s ease; /* Slower and smoother item reveal */
+  }
+  
+  .timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: white; /* White circle */
+    border: 4px solid black; /* Black border */
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5); /* Black shadow glow effect on circle */
+  }
+  
+  .timeline-content {
+    background: white; /* White background for each item */
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    color: black; /* Black text */
+  }
+  
+  .timeline-content h3 {
+    margin: 0;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .timeline-content h4 {
+    margin-top: 4px;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .timeline-content p {
+    margin: 10px 0;
+    color: black;
+    line-height: 1.5;
+  }
+  
+  .img-placeholder img {
+    width: 100%;
+  height: 220px; /* Fixed height */
+  object-fit: cover; /* Will crop excess */
+  border-radius: 8px;
+  margin-top: 10px;;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
 /* Mobile View */
 
 
@@ -618,7 +754,7 @@ margin: 0px;
     flex-direction: column;
 }
 #education{
-    height: 750px;
+    height: 3400px;
 }
  .certificate-containers{
    display: flex;
@@ -712,6 +848,13 @@ margin: 0px;
    }
    .certificate-container{
     height: 80%;
+   }
+   #education {
+    height: 3000px;
+   }
+   .img-placeholder {
+    width: 100%;
+    height: auto;
    }
 
 }

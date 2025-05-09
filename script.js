@@ -75,3 +75,61 @@ setTimeout(() => {
     backgroundOverlay.remove();
 }, 600); // 3000ms = 3s
 
+
+
+
+
+
+const items = document.querySelectorAll('.timeline-item');
+const line = document.querySelector('.line');
+let lineAnimated = false;
+
+function handleScroll() {
+  let windowBottom = window.innerHeight + window.scrollY;
+  let timelineTop = document.querySelector('.timeline').offsetTop;
+  const lineHeight = document.querySelector('.timeline').offsetHeight;
+
+  // Animate the line grow only once (when user scrolls to the timeline container)
+  if (!lineAnimated && windowBottom > timelineTop + 100) {
+    line.style.height = lineHeight + 'px';
+    lineAnimated = true; // Prevents line from growing again after initial animation
+  }
+
+  // Show items with scroll
+  items.forEach(item => {
+    const rect = item.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      item.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll);
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const timeline = document.querySelector(".timeline");
+  const line = document.querySelector(".line");
+  const items = document.querySelectorAll(".timeline-item");
+
+  function revealTimeline() {
+    const rect = timeline.getBoundingClientRect();
+    if (rect.top <= window.innerHeight / 1.3) {
+      line.classList.add("animate");
+
+      items.forEach((item) => {
+        const itemRect = item.getBoundingClientRect();
+        if (itemRect.top <= window.innerHeight - 100) {
+          item.classList.add("visible");
+        }
+      });
+    }
+  }
+
+  window.addEventListener("scroll", revealTimeline);
+  revealTimeline(); // Run once in case already in view
+});
