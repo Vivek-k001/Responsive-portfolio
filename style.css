@@ -378,12 +378,10 @@ margin: 0px;
 .skill-items{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     background-color: rgb(240, 240, 240);
     border-radius: 15px;
     padding: 15px;
-   
     margin: 8px;
     box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.664),
     -8px -8px 9px rgb(255, 255, 255);
@@ -397,7 +395,7 @@ margin: 0px;
     transform: scale(1.08); 
 }
 .skill-img{
-    width: 55px;
+    width: 50px;
 }
 
 .skill-txt{
@@ -572,11 +570,8 @@ margin: 0px;
 {
 
 
-#toolbar-inside{
-    padding-left: 8px;
-}
 #contact-btn{
-  width: 100px;
+  width: 70%;
   height: auto;
 }
 #home{
@@ -611,7 +606,7 @@ margin: 0px;
     width: 100%;
     height: 50%;
 }
-#social-media{
+.social-media{
     padding-bottom: 65px;
     height: 25px;
 }
@@ -678,6 +673,12 @@ margin: 0px;
     #home-text2{
         font-size: 22px;
         margin-top: 0px;
+    }
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        height: 45%;
+        width: 65%;
     }
     #about-inside{
         flex-direction: row;
