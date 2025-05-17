@@ -758,14 +758,14 @@ margin: 0px;
     flex-direction: column;
 }
 #education{
-    height: 4000px;
+    height: 5400px;
 }
  .certificate-containers{
    display: flex;
    flex-direction: column;
 }
 #certificate{
-    height: 5510px;
+    height: 6000px;
 }
 #certificate-image{
     width: 90%;
@@ -841,7 +841,7 @@ margin: 0px;
         height: 30%;
     }
     #certificate{
-        height: 4800px;
+        height: 5600px;
     }
     #certificate-image{
      height: 65%;
@@ -854,7 +854,7 @@ margin: 0px;
     height: 80%;
    }
    #education {
-    height: 3800px;
+    height: 5300px;
    }
 
    .timeline {
