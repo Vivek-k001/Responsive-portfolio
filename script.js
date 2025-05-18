@@ -22,6 +22,9 @@ about_btn.addEventListener('click', function() {
   }
   scrollStep();
 });
+
+
+
 var insta = document.getElementById("inst-logo");
 insta.addEventListener('click', function() {
     window.open("https://www.instagram.com/vivek2cold/")
@@ -44,36 +47,43 @@ x.addEventListener('click', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+
+// Smooth scrolling for anchor links
+document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll('a[href*="#"]');
-  links.forEach(function(link) {
-    link.addEventListener('click', function(event) {
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
       event.preventDefault();
       const target = document.querySelector(link.getAttribute('href'));
-      target.scrollIntoView();
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   });
 });
 
+// Immediately hide the loading screen after the page fully loads
+window.addEventListener("load", function () {
+  const loadingScreen = document.getElementById("loading-screen");
+  if (loadingScreen) {
+    loadingScreen.style.display = "none";
+  }
 
-const loadingScreen = document.getElementById('loading-screen');
+  // Create and append background overlay
+  const backgroundOverlay = document.createElement('div');
+  backgroundOverlay.className = 'background-overlay'; // corrected assignment
+  document.body.appendChild(backgroundOverlay);
 
-window.addEventListener("load", function() {
-setTimeout(function() {
-document.getElementById("loading-screen").style.display = "none";
-}, 600); // Wait for 3 seconds before hiding the loading screen
+  // Remove the background overlay immediately
+  backgroundOverlay.remove(); // or delay a bit if you want animation
 });
 
 
-// Create the background overlay element
-const backgroundOverlay = document.createElement('div');
-(div) = 'background-overlay';
-document.body.appendChild(backgroundOverlay);
 
-// Remove the background overlay after the animation is complete
-setTimeout(() => {
-    backgroundOverlay.remove();
-}, 600); // 3000ms = 3s
+
+
+
+
 
 
 

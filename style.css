@@ -459,13 +459,17 @@ margin: 0px;
 
 
 
-#certificate{
+
+
+#certificate {
     width: 100%;
-    height: 800px;
     background-color: rgb(228, 228, 228);
     font-family: 'Inter', sans-serif;
-    
-}
+    /* REMOVE fixed heights */
+    padding-bottom: 40px; /* Add space below all content */
+    /* You can add padding-top if you want spacing above */
+  }
+
 #certificate-head{
 
    font-weight: bold;
@@ -515,6 +519,9 @@ margin: 0px;
     font-weight: bold;
     color: black;
     font-family: 'Inter', sans-serif;}
+
+
+
 
 
 
@@ -710,10 +717,13 @@ margin: 0px;
 {
 
 
-#contact-btn{
-  width: 70%;
-  height: auto;
-}
+    .contact-btn {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+        width: auto;
+        max-width: 90%;
+      }
+
 #home{
     flex-direction: column;
 }
@@ -764,9 +774,7 @@ margin: 0px;
    display: flex;
    flex-direction: column;
 }
-#certificate{
-    height: 6000px;
-}
+
 #certificate-image{
     width: 90%;
     border-radius: 10;
@@ -840,9 +848,7 @@ margin: 0px;
         width: 30%;
         height: 30%;
     }
-    #certificate{
-        height: 5600px;
-    }
+   
     #certificate-image{
      height: 65%;
      width: 90%;
