@@ -250,26 +250,43 @@ body{
   }
   
   
-#home-text1, #about-head{
+/* Fade-in slowly (only opacity) for home-text1 and about-head */
+#home-text1, #about-head {
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    animation: fadeIn 3s;
+    animation: fadeInSlow 2.5s ease-in-out;
 }
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
-
-#home-text2{
+/* Slide-in from left for home-text2 */
+#home-text2 {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
+    animation: fadeInLeft 2s ease-out;
 }
+
+/* Keyframes */
+@keyframes fadeInSlow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 #home-img{
    width: 40%;
    border-radius: 10px;

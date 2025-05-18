@@ -76,7 +76,9 @@ window.addEventListener("load", function () {
 
   // Remove the background overlay immediately
   backgroundOverlay.remove(); // or delay a bit if you want animation
-});
+}); 
+
+
 
 
 
