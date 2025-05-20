@@ -27,21 +27,27 @@ html {
     height: 100vh;
 }
 body{
+    background-color: rgb(228, 228, 228);
     margin: 0px;
     padding: 0px;
 }
-#toolbar{
+#toolbar {
+    position: fixed; /* Makes it stay on top */
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100px;
     background-color: hsla(0, 0%, 58%, 0.214);
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
-    margin-bottom: 1px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Proper blur effect */
+    z-index: 999; /* Ensures it stays above all content */
 }
 
-#toolbar-inside{
+/* Inside content remains as-is */
+#toolbar-inside {
     display: flex;
     flex-direction: row;
     flex: 3;
@@ -230,6 +236,7 @@ body{
     height: 600px;
     background-color: rgb(190, 190, 190);
     display: flex;
+    padding-top: 100px; /* Same as the height of #toolbar */
   }
   
   #home-left {
@@ -291,9 +298,9 @@ body{
    width: 40%;
    border-radius: 10px;
    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.664),
-              -8px -8px 9px rgb(255, 255, 255);
-     transition: transform 0.5s ease-in-out ;
-     animation: fadeIn 3s;
+               -8px -8px 9px rgb(255, 255, 255);
+   transition: transform 0.5s ease-in-out ;
+   animation: fadeIn 5s;
 }
 @keyframes fadeIn {
     0% {
@@ -734,12 +741,19 @@ margin: 0px;
 {
 
 
-    .contact-btn {
-        font-size: 0.95rem;
-        padding: 10px 20px;
+    #contact-btn {
+        font-size: 0.70rem;
+        padding: 3px 8px;
         width: auto;
-        max-width: 90%;
+        max-width: 140px;
+        box-sizing: border-box;
+        white-space: nowrap;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 20px;
       }
+      
 
 #home{
     flex-direction: column;
@@ -776,6 +790,8 @@ margin: 0px;
 .social-media{
     padding-bottom: 65px;
     height: 25px;
+        animation: fadeIn 5s;
+    
 }
 #contact-btn{
     height: 35px;
@@ -804,6 +820,11 @@ margin: 0px;
    
 }
 
+
+
+
+
+
 /* Desktop View */
 
 
@@ -818,7 +839,7 @@ margin: 0px;
         flex-direction: row;
     }
     #home-img{
-        width: 40%;
+        width: 35%;
         height: 60%;
     }
     #home-left{
