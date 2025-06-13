@@ -23,8 +23,8 @@ html {
 
 #bg{
     background-color: rgb(228, 228, 228);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 body{
     background-color: rgb(228, 228, 228);
@@ -41,7 +41,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 10px rgba(125, 125, 125, 0.3);
     backdrop-filter: blur(10px); /* Proper blur effect */
     z-index: 999; /* Ensures it stays above all content */
 }
