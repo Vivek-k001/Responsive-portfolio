@@ -822,6 +822,22 @@ margin: 0px;
 
 
 
+@media (max-width: 480px) {
+#home-img{
+ width: 50%;
+ height: 50%;
+}
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
