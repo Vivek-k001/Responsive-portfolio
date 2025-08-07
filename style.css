@@ -481,17 +481,11 @@ margin: 0px;
 }
 
 
-
-
-
-
 #certificate {
     width: 100%;
     background-color: rgb(228, 228, 228);
     font-family: 'Inter', sans-serif;
-    /* REMOVE fixed heights */
-    padding-bottom: 40px; /* Add space below all content */
-    /* You can add padding-top if you want spacing above */
+    padding-bottom: 40px; 
   }
 
 #certificate-head{
@@ -548,8 +542,6 @@ margin: 0px;
 
 
 
-
-
 .icon{
  height: 2rem;
  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.664),
@@ -596,21 +588,6 @@ margin: 0px;
 }
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #education-text1 {
     font-family: 'Inter', sans-serif;
@@ -709,29 +686,6 @@ margin: 0px;
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
 /* Mobile View */
 
 
@@ -801,7 +755,7 @@ margin: 0px;
     flex-direction: column;
 }
 #education{
-    height: 5400px;
+    height: 5900px;
 }
  .certificate-containers{
    display: flex;
@@ -819,17 +773,6 @@ margin: 0px;
 }
    
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -907,7 +850,7 @@ margin: 0px;
     height: 80%;
    }
    #education {
-    height: 5300px;
+    height: 5950px;
    }
 
    .timeline {
