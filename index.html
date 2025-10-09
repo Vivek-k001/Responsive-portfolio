@@ -1,205 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
-    <link rel="icon" type="image/jpeg" href="assets/vivek-logo1.jpg">
-    <link  href="style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/vivek-logo1.jpg" />
+
+  <!-- Styles -->
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-   
-
-  
- <div id="bg">
-     
- <!-- <div id="loading-screen"></div> -->
-  
-     <div id="toolbar">
+  <div id="bg">
+    <!-- Header / Toolbar -->
+    <header id="toolbar" role="banner">
       <div id="toolbar-inside">
-        
-        <p id="hdname"> My Portfolio </p>
-  </div>
-        
-    <div id="btn-div">
-      <button id="contact-btn">Contact Me</button>
-    </div>
-     </div>
-             <div id="home">
-               <div id="home-left">
-                <div id="home-left-inside">
-                  <p id="home-text1">Hello !! <br>I'm Vivek 
-                  </p>
-                 <p id="home-text2"> Fullstack web & Flutter Dev</p>
-                  <button id="home-about-btn">About My Education</button>
-                  <br>
-                  <br>
-                  <div class="social-media">
+        <p id="hdname">My Portfolio</p>
+      </div>
+      <div id="btn-div">
+        <button id="contact-btn" type="button">Contact Me</button>
+      </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+      <div id="home-left">
+        <div id="home-left-inside">
+          <h1 id="home-heading" class="sr-only">Home</h1>
+          <p id="home-text1">
+            Hello !! <br />I'm Vivek
+          </p>
+          <p id="home-text2">Fullstack web Flutter Dev</p>
+          <button id="home-about-btn" type="button">About My Education</button>
+          <br /><br />
+
+          <div class="social-media">
                    <img src="assets/linkedin logo.png" id="linkedin-logo">
                    <img src="assets/inst logo.png" id="inst-logo">
                    <img src="assets/github logo.png"  id="github-logo">
                    <img src="assets/x logo.png" id="x-logo">
                   
                    </div>
-                </div>
-               </div>
+        </div>
+      </div>
 
-                  <div id="home-right">
-                <img src="assets/pfp1.jpg" id="home-img">
-                  
-              </div>
+      <div id="home-right">
+        <img src="assets/pfp1.jpg" id="home-img" alt="Vivek profile photo" />
+      </div>
+    </section>
 
-             </div>
+    <!-- About -->
+    <section id="about">
+      <center>
+        <h1 id="about-head">ABOUT ME</h1>
+      </center>
 
-            <div id="about">
-                <center>
-                  <h1 id="about-head"> ABOUT ME</h1>
-                </center>
-                
-                <div id="about-inside">
-                  <div id="about-left">
-                    <img id="about-img" src="assets/cs-100.png">
-                  </div>
+      <div id="about-inside">
+        <div id="about-left">
+          <img id="about-img" src="assets/cs-100.png" alt="Computer science illustration" />
+        </div>
 
-                  <div id="about-right ">
+        <!-- fixed invalid id: removed trailing space -->
+        <div id="about-right">
+          <div id="about-left-inside">
+            <fieldset>
+              <legend class="sr-only">About details</legend>
+              <p id="about-text1">Myself I am Vivek</p>
+              <br />
+              <p id="about-text1">
+                MCA Student BCA Graduate.<br />
+                My passion for Web and App development started at an early age,<br />
+                which keeps me motivated to get more ideas for my projects.<br />
+                I also enjoy photo and video editing to add creative touches.<br />
+                Thanks for taking the time to check out my portfolio!
+              </p>
+              <p id="about-text2">
+                Email: vk3699010@gmail.com <br />
+                Phone: +91 73561 23690
+              </p>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <div id="about-left-inside">
-                    <fieldset>
-                    <p id="about-text1">Myself i am Vivek</p>
-                     <br>
-                     <p id="about-text1">MCA Student & BCA Graduate.<br>
-                      My passion for Web and app development started at a early age <br>
-                      Which keeps me motivate to get more ideas for my projects.<br>
-                      I also enjoy photo and video editing to add creative touches.<br>
-                      Thanks for taking the time to check out my portfolio!</p>
-                     <p id="about-text2">Email:  vk3699010@gmail.com 
-                      <br> Phone : +917356123690 </p>
-                    </fieldset>
-                     </div>
-                   </div>
-                  
-                </div>
-           </div>
-         <div id="skill">
-        <center>
+    <!-- Skills -->
+    <section id="skill">
+      <center>
           <h1 id="skill-head"> Programming languages & Frameworks<img src="assets/coding.png"  class="heading-logo"></h1>
         </center>
 
-          <div id="skill-inside">
+      <div id="skill-inside" role="list">
+        <div class="skill-items" role="listitem">
+          <img src="assets/html logo.png" class="skill-img" alt="HTML"  />
+          <p class="skill-txt">HTML</p>
+        </div>
 
-               <div class="skill-items">
-                  <img src="assets/html logo.png" class="skill-img">
-                  <p class="skill-txt">HTML</p>
-               </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/css logo.png" class="skill-img" alt="CSS"  />
+          <p class="skill-txt">CSS</p>
+        </div>
 
-                 
-                 <div class="skill-items">
-                <img src="assets/css logo.png" class="skill-img">
-                   <p class="skill-txt">CSS</p>
-               </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/javascript logo.png" class="skill-img" alt="JavaScript"  />
+          <p class="skill-txt">Js</p>
+        </div>
 
-               <div class="skill-items">
-              <img src="assets/javascript logo.png" class="skill-img">
-              <p class="skill-txt">Js</p>
-              </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/typescript-logo.png" class="skill-img" alt="TypeScript"  />
+          <p class="skill-txt">Ts</p>
+        </div>
 
-              <div class="skill-items">
-                <img src="assets/typescript-logo.png" class="skill-img">
-                <p class="skill-txt">Ts</p>
-                </div>
- 
-              <div class="skill-items">
-              <img src="assets/flutter logo.png" class="skill-img">
-             <p class="skill-txt">Flutter</p>
-             </div>
- 
-            <div class="skill-items">
-             <img src="assets/react logo.png" class="skill-img">
-           <p class="skill-txt">React</p>
-           </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/flutter logo.png" class="skill-img" alt="Flutter" />
+          <p class="skill-txt">Flutter</p>
+        </div>
 
-           <div class="skill-items">
-            <img src="assets/svelte-logo.png" class="skill-img">
+        <div class="skill-items" role="listitem">
+          <img src="assets/react logo.png" class="skill-img" alt="React"  />
+          <p class="skill-txt">React</p>
+        </div>
+
+        <div class="skill-items" role="listitem">
+          <img src="assets/svelte-logo.png" class="skill-img" alt="Svelte"  />
           <p class="skill-txt">Svelte</p>
-          </div>
+        </div>
 
-             <div class="skill-items">
-            <img src="assets/java logo.png" class="skill-img">
-            <p class="skill-txt">JAVA</p>
-             </div>
-     
-           <div class="skill-items">
-          <img src="assets/php logo.png" class="skill-img">
-            <p class="skill-txt">PHP</p>
-            </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/java logo.png" class="skill-img" alt="Java"  />
+          <p class="skill-txt">JAVA</p>
+        </div>
 
-            <div class="skill-items">
-              <img src="assets/ai logo.png" class="skill-img">
-                <p class="skill-txt">Ai</p>
-               </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/php logo.png" class="skill-img" alt="PHP"  />
+          <p class="skill-txt">PHP</p>
+        </div>
 
-               <div class="skill-items">
-                <img src="assets/ml logo.png" class="skill-img">
-                  <p class="skill-txt">ML</p>
-                 </div>
-        
-        <div class="skill-items">
-        <img src="assets/python logo.png" class="skill-img">
+        <div class="skill-items" role="listitem">
+          <img src="assets/ai logo.png" class="skill-img" alt="AI"/>
+          <p class="skill-txt">Ai</p>
+        </div>
+
+        <div class="skill-items" role="listitem">
+          <img src="assets/ml logo.png" class="skill-img" alt="ML"  />
+          <p class="skill-txt">ML</p>
+        </div>
+
+        <div class="skill-items" role="listitem">
+          <img src="assets/python logo.png" class="skill-img" alt="Python" />
           <p class="skill-txt">Python</p>
-         </div>
+        </div>
 
-          <div class="skill-items">
-           <img src="assets/c logo.png" class="skill-img">
-           <p class="skill-txt">C</p>
-          </div>
-   
-            <div class="skill-items">
-           <img src="assets/sql logo.png" class="skill-img">
-            <p class="skill-txt">SQL</p>
-           </div>
-          
-         </div>
-         <center>
-          <h1 id="skill-head">Designings And Editings <img src="assets/editing.png"  class="heading-logo"></h1>
-        </center>
-         <div id="skill-inside">
+        <div class="skill-items" role="listitem">
+          <img src="assets/c logo.png" class="skill-img" alt="C" />
+          <p class="skill-txt">C</p>
+        </div>
 
-               <div class="skill-items">
-                  <img src="assets/picsart-logo.png" class="skill-img">
-                  <p class="skill-txt">Picsart</p>
-               </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/sql logo.png" class="skill-img" alt="SQL"  />
+          <p class="skill-txt">SQL</p>
+        </div>
+      </div>
 
-                 <div class="skill-items">
-                <img src="assets/capcut-logo.png" class="skill-img">
-                   <p class="skill-txt">Capcut</p>
-               </div>
+      <center>
+        <!-- Keeping same id text for your styling -->
+        <h1 id="skill-head">
+          Designings And Editings
+          <img src="assets/editing.png" class="heading-logo" alt=""  />
+        </h1>
+      </center>
 
-               <div class="skill-items">
-              <img src="assets/canva logo.png" class="skill-img">
-              <p class="skill-txt">Canva</p>
-              </div>
+      <div id="skill-inside" role="list">
+        <div class="skill-items" role="listitem">
+          <img src="assets/picsart-logo.png" class="skill-img" alt="Picsart"  />
+          <p class="skill-txt">Picsart</p>
+        </div>
 
-              <div class="skill-items">
-                <img src="assets/kine logo.png" class="skill-img">
-                <p class="skill-txt">kinemaster</p>
-                </div>
- 
-             <div class="skill-items">
-            <img src="assets/figma-logo.png" class="skill-img">
-            <p class="skill-txt">Figma</p>
-             </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/capcut-logo.png" class="skill-img" alt="CapCut"  />
+          <p class="skill-txt">Capcut</p>
+        </div>
 
-             <div class="skill-items">
-              <img src="assets/Lightroom-logo.png" class="skill-img">
-              <p class="skill-txt">Lightroom</p>
-               </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/canva logo.png" class="skill-img" alt="Canva"  />
+          <p class="skill-txt">Canva</p>
+        </div>
 
+        <div class="skill-items" role="listitem">
+          <img src="assets/kine logo.png" class="skill-img" alt="Kinemaster"  />
+          <p class="skill-txt">kinemaster</p>
+        </div>
 
-         </div>
-    </div>
+        <div class="skill-items" role="listitem">
+          <img src="assets/figma-logo.png" class="skill-img" alt="Figma"  />
+          <p class="skill-txt">Figma</p>
+        </div>
 
-        <div id="education">
+        <div class="skill-items" role="listitem">
+          <img src="assets/Lightroom-logo.png" class="skill-img" alt="Lightroom" />
+          <p class="skill-txt">Lightroom</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <div id="education">
           <center>
              <h1 id="education-head">Education<img src="assets/education-logo.png"  class="heading-logo"> </h1>
           </center>
@@ -338,291 +347,246 @@
 
 
 
+    <!-- Certificates -->
+    <div id="certificate" >
+      <center>
+        <h1 id="certificate-head">
+          Certificates
+          <img src="assets/certificate-logo.png" class="heading-logo" alt="" />
+        </h1>
+      </center>
 
-        <div id="certificate">
-          <center>
-             <h1 id="certificate-head"> Certificates<img src="assets/certificate-logo.png" class="heading-logo"></h1>
-          </center>
-         
-          <div class="about__details-container">
-            <div class="certificate-containers">
-
-                <div class="certificate-container">
-
-              <div>
-                <img src="assets/experience.png" class="icon" 
-               style="display: inline-block;">
-             <h1 style="display: inline-block;">Web Development</h1>
-             </div>
-            <a href="assets/web-certificate.png" target="_blank">
-         <img src="assets/web-certificate.png" id="certificate-image"/>
-         </a>
-         <p id="certificate-text"> Web Development course by Talim</p>
-           <p id="tap">(tap on image to view)</p>
+      <div class="about__details-container">
+        <div class="certificate-containers">
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Web Development</h1>
             </div>
+            <a href="assets/web-certificate.png" target="_blank" rel="noopener">
+              <img src="assets/web-certificate.png" id="certificate-image" alt="Web Development certificate"  />
+            </a>
+            <p id="certificate-text">Web Development course by Talim</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-      
-
-            <div class="certificate-container">
-              <div>
-                <img src="assets/experience.png" class="icon" 
-               style="display: inline-block;">
-             <h1 style="display: inline-block;">Pen Testing</h1>
-             </div>
-            <a href="assets/red-team.jpg" target="_blank">
-         <img src="assets/red-team.jpg" id="certificate-image"/>
-         </a>
-         <p id="certificate-text"> Pen Testing Internsip by Redteam </p>
-           <p id="tap">(tap on image to view)</p>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Pen Testing</h1>
             </div>
+            <a href="assets/red-team.jpg" target="_blank" rel="noopener">
+              <img src="assets/red-team.jpg" id="certificate-image" alt="RedTeam Pen Testing internship certificate"  />
+            </a>
+            <p id="certificate-text">Pen Testing Internship by Redteam</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Cyber Security</h1>
+            </div>
+            <a href="assets/tata-certificate.png" target="_blank" rel="noopener">
+              <img src="assets/tata-certificate.png" id="certificate-image" alt="TATA Cyber Security certificate"  />
+            </a>
+            <p id="certificate-text">Cyber security analyst by TATA</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Flutter</h1>
+            </div>
+            <a href="assets/cyra.jpg" target="_blank" rel="noopener">
+              <img src="assets/cyra.jpg" id="certificate-image" alt="Cyra Flutter certificate"  />
+            </a>
+            <p id="certificate-text">Flutter development by Cyra Learnings</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Cyber Security</h1>
-                 </div>
-                <a href="assets/tata-certificate.png" target="_blank">
-             <img src="assets/tata-certificate.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text"> Cyber security analyst by TATA </p>
-               <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>AI Chatbot Dev</h1>
+            </div>
+            <a href="assets/upcode.jpg" target="_blank" rel="noopener">
+              <img src="assets/upcode.jpg" id="certificate-image" alt="Upcode Python AI Chatbot certificate"  />
+            </a>
+            <p id="certificate-text">Building Python AI Chatbot by Upcode SW Labs</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Cloud</h1>
+            </div>
+            <a href="assets/datacom-cloud.png" target="_blank" rel="noopener">
+              <img src="assets/datacom-cloud.png" id="certificate-image" alt="Datacom Cloud Computing certificate"  />
+            </a>
+            <p id="certificate-text">Cloud Computing by DATACOM</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Flutter</h1>
-                 </div>
-                <a href="assets/cyra.jpg" target="_blank">
-             <img src="assets/cyra.jpg" id="certificate-image"/>
-             </a>
-             <p id="certificate-text"> Flutter development by cyra Learnings</p>
-               <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Data analyst</h1>
+            </div>
+            <a href="assets/deloitte-data-analytics.png" target="_blank" rel="noopener">
+              <img src="assets/deloitte-data-analytics.png" id="certificate-image" alt="Deloitte Data Analytics certificate"  />
+            </a>
+            <p id="certificate-text">Data analyst by Deloitte</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>UI-UX Designing</h1>
+            </div>
+            <a href="assets/softronics-ui.png" target="_blank" rel="noopener">
+              <img src="assets/softronics-ui.png" id="certificate-image" alt="Softroniics UI/UX certificate"  />
+            </a>
+            <p id="certificate-text">UI-UX designing by Softroniics</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">AI Chatbot Dev</h1>
-                 </div>
-                <a href="assets/upcode.jpg" target="_blank">
-             <img src="assets/upcode.jpg" id="certificate-image"/>
-             </a>
-             <p id="certificate-text"> Building python AI Chatbot by Upcode sw labs</p>
-               <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>UX Designing</h1>
+            </div>
+            <a href="assets/lloyds-uiux.png" target="_blank" rel="noopener">
+              <img src="assets/lloyds-uiux.png" id="certificate-image" alt="Lloyds UX certificate"  />
+            </a>
+            <p id="certificate-text">UX Designing by LLOYDS</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Cyber Security</h1>
+            </div>
+            <a href="assets/certificate-hp1.png" target="_blank" rel="noopener">
+              <img src="assets/certificate-hp1.png" id="certificate-image" alt="HP Cyber Security intro certificate"  />
+            </a>
+            <p id="certificate-text">Cyber Security class intro by HP</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Cloud </h1>
-                 </div>
-                 <a href="assets/datacom-cloud.png" target="_blank">
-             <img src="assets/datacom-cloud.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text">Cloud Computing by DATACOM </p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Cyber Security</h1>
+            </div>
+            <a href="assets/datacom-cyber.png" target="_blank" rel="noopener">
+              <img src="assets/datacom-cyber.png" id="certificate-image" alt="Datacom Cyber Security certificate"  />
+            </a>
+            <p id="certificate-text">Cyber security by Datacom</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Data analyst</h1>
-                 </div>
-                 <a href="assets/deloitte-data-analytics.png" target="_blank">
-             <img src="assets/deloitte-data-analytics.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text">Data analyst by Deloitte</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Cyber security  Hacking</h1>
+            </div>
+            <a href="assets/techunique-certificate.png" target="_blank" rel="noopener">
+              <img src="assets/techunique-certificate.png" id="certificate-image" alt="TheTechUnique Cyber Security & Hacking workshop certificate"  />
+            </a>
+            <p id="certificate-text">Cyber Security  Hacking Workshop by TheTechUnique</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">UI-UX Designing</h1>
-                 </div>
-                <a href="assets/softronics-ui.png" target="_blank">
-             <img src="assets/softronics-ui.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text"> UI-UX designing BY Softroniics</p>
-               <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Software Engineering</h1>
+            </div>
+            <a href="assets/accenture-sw-eng.png" target="_blank" rel="noopener">
+              <img src="assets/accenture-sw-eng.png" id="certificate-image" alt="Accenture Software Engineering certificate"  />
+            </a>
+            <p id="certificate-text">Software Engineering by Accenture</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">UX Designing</h1>
-                 </div>
-                 <a href="assets/lloyds-uiux.png" target="_blank">
-             <img src="assets/lloyds-uiux.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text">UX Designing by LLOyds</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>software Dev</h1>
+            </div>
+            <a href="assets/datacom-sw-dev.png" target="_blank" rel="noopener">
+              <img src="assets/datacom-sw-dev.png" id="certificate-image" alt="Datacom Software Development certificate"  />
+            </a>
+            <p id="certificate-text">Software Development by Datacom</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Cyber Security</h1>
-                 </div>
-                 <a href="assets/certificate-hp1.png" target="_blank">
-             <img src="assets/certificate-hp1.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text"> Cyber Security class intro by HP</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Networking</h1>
+            </div>
+            <a href="assets/iv.jpg" target="_blank" rel="noopener">
+              <img src="assets/iv.jpg" id="certificate-image" alt="Infocampus networking/cloud/cybersecurity certificate"  />
+            </a>
+            <p id="certificate-text">Computer Networking, Cloud by Infocampus</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Cyber Security</h1>
-                 </div>
-                 <a href="assets/datacom-cyber.png" target="_blank">
-             <img src="assets/datacom-cyber.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text">Cyber security by datacom</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>AI</h1>
+            </div>
+            <a href="assets/nxtwave-certificate.png" target="_blank" rel="noopener">
+              <img src="assets/nxtwave-certificate.png" id="certificate-image" alt="NxtWave AI workshop certificate"  />
+            </a>
+            <p id="certificate-text">AI Workshop by NXTWAVE</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
 
-
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Cyber seurity & Hacking</h1>
-                 </div>
-                 <a href="assets/techunique-certificate.png" target="_blank">
-             <img src="assets/techunique-certificate.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text">Cyber Security & Hacking Workshop by TheTechUnique</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
-
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Software Engineering</h1>
-                 </div>
-                 <a href="assets/accenture-sw-eng.png" target="_blank">
-             <img src="assets/accenture-sw-eng.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text">Software Engineering by accenture</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
-
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">software Dev</h1>
-                 </div>
-                 <a href="assets/datacom-sw-dev.png" target="_blank">
-             <img src="assets/datacom-sw-dev.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text">Software Development by Datacom</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
-
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Networking</h1>
-                 </div>
-                <a href="assets/iv.jpg" target="_blank">
-             <img src="assets/iv.jpg" id="certificate-image"/>
-             </a>
-             <p id="certificate-text"> Computer Networking, Cloud & Cyber Security by Infocampus</p>
-               <p id="tap">(tap on image to view)</p>
-                </div>
-
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">AI</h1>
-                 </div>
-                 <a href="assets/nxtwave-certificate.png" target="_blank">
-             <img src="assets/nxtwave-certificate.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text"> AI Workshop by NXTWAVE</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
-
-                <div class="certificate-container">
-                  <div>
-                    <img src="assets/experience.png" class="icon" 
-                   style="display: inline-block;">
-                 <h1 style="display: inline-block;">Data Analyst</h1>
-                 </div>
-                 <a href="assets/certificate-hp2.png" target="_blank">
-             <img src="assets/certificate-hp2.png" id="certificate-image"/>
-             </a>
-             <p id="certificate-text">Data Analytics course by HP</p>
-             <p id="tap">(tap on image to view)</p>
-                </div>
-                
-             </div>
-         </div>
+          <div class="certificate-container">
+            <div>
+              <img src="assets/experience.png" class="icon" alt=""  />
+              <h1>Data Analyst</h1>
+            </div>
+            <a href="assets/certificate-hp2.png" target="_blank" rel="noopener">
+              <img src="assets/certificate-hp2.png" id="certificate-image" alt="HP Data Analytics certificate"  />
+            </a>
+            <p id="certificate-text">Data Analytics course by HP</p>
+            <p id="tap">(tap on image to view)</p>
+          </div>
         </div>
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-        
-  <footer id="footer">
-    <div id="footer-inside">
-     <p id="footer-txt1">Thankyou for Scrolling down</p>
-     <br>
-    <div id="hr-line">g</div>
-     <p id="footer-txt2">
-      Copyright <img src="assets/copyright logo.png" id="copyright-img">
-      2024 Vivek.k. All ontent on this website is protectd by copyright law, 
-      and unauthorized use or reproduction <br>of any materials without permission
-       is strictly prohibited.For enquiries regarding the use or licensing , 
-       please contact me at<br>  
-    </p>
-    <p id="footer-txt2">
-      Email :  vk3699010@gmail.com   
-    </p>
+      </div>
     </div>
-   </footer>
-     <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer id="footer" role="contentinfo">
+      <div id="footer-inside">
+        <p id="footer-txt1">Thank you for scrolling down</p>
+        <br />
+        <div id="hr-line" >g</div>
+        <p id="footer-txt2">
+          Copyright
+          <img src="assets/copyright logo.png" id="copyright-img" alt=""  />
+          2024 Vivek K. All content on this website is protected by copyright law,
+          and unauthorized use or reproduction of any materials without permission
+          is strictly prohibited. For enquiries regarding the use or licensing,
+          please contact me at
+        </p>
+        <p id="footer-txt2">
+          Email: <a href="mailto:vk3699010@gmail.com">vk3699010@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>
